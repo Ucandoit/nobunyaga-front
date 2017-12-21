@@ -35,6 +35,7 @@ module.exports = function (options) {
 
   const entry = {
     polyfills: './src/polyfills.browser.ts',
+    bootstrap: 'bootstrap-loader',
     main:      './src/main.browser.ts'
   };
 
@@ -124,6 +125,16 @@ module.exports = function (options) {
           test: /\.scss$/,
           use: ['to-string-loader', 'css-loader', 'sass-loader'],
           exclude: [helpers.root('src', 'styles')]
+        },
+
+        /*
+         *
+         * jQuery for bootstrap loader
+         *
+         */
+        {
+          test: /bootstrap-sass\/assets\/javascripts\//,
+          use: 'imports-loader?jQuery=jquery'
         },
 
         /**

@@ -1,0 +1,43 @@
+<div class="container">
+    <header>
+        <!--<div class="camilla-header">-->
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#camilla-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">のぶニャがの野望</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="camilla-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li [routerLinkActive]="['active']">
+                    <a [routerLink]="['/home']">首頁</a>
+                </li>
+                <!--<li [routerLinkActive]="['active']"><a href="#profile">Galarry</a></li>-->
+                <li [routerLinkActive]="['active']">
+                    <a [routerLink]="['/videos']">組隊</a>
+                </li>
+                <!--<li [routerLinkActive]="['active']"><a href="#resume">Resume</a></li>
+          <li [routerLinkActive]="['active']"><a href="#portfolio">Portfolio</a></li>-->
+                <li [routerLinkActive]="['active']">
+                    <a [routerLink]="['/about']">FAQ</a>
+                </li>
+            </ul>
+        </div>
+        <!--</div>-->
+    </header>
+
+    <main>
+        <router-outlet></router-outlet>
+    </main>
+
+    <footer>
+        ©2017-2018 ucan.io
+    </footer>
+
+</div>
