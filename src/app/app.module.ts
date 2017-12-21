@@ -15,10 +15,14 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
+import { CatGroupComponent } from './cat-group';
 import { AboutComponent } from './about';
 import { NoContentComponent } from './no-content';
 import { XLargeDirective } from './home/x-large';
 import { DevModuleModule } from './+dev-module';
+
+// modules
+import { UIComponentModule } from './uicomponents/uicomponents.module';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -43,6 +47,7 @@ type StoreType = {
   declarations: [
     AppComponent,
     AboutComponent,
+    CatGroupComponent,
     HomeComponent,
     NoContentComponent,
     XLargeDirective
@@ -66,6 +71,7 @@ type StoreType = {
      * This is a simple example, a big app should probably implement some logic
      */
     ...environment.showDevModule ? [ DevModuleModule ] : [],
+    UIComponentModule
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
