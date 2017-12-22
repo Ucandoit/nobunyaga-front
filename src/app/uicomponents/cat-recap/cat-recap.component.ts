@@ -1,10 +1,13 @@
 import { Component, Input } from '@angular/core';
 
-import { CustomCat } from '../../core/data';
+import { CustomCat } from '../../core/domains';
 
 @Component({
   selector: 'cat-recap',
-  templateUrl: 'cat-recap.component.html'
+  styleUrls: [
+    './cat-recap.component.css'
+  ],
+  templateUrl: 'cat-recap.component.html',
 })
 export class CatRecapComponent {
 

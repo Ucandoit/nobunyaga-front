@@ -3,7 +3,7 @@ import {
     OnInit
   } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { CustomCat } from '../core/data';
+import { CustomCat } from '../core/domains';
   
   @Component({
     selector: 'cat-group',

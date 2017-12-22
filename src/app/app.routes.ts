@@ -7,6 +7,7 @@ import { NoContentComponent } from './no-content';
 export const ROUTES: Routes = [
   { path: '',      component: HomeComponent },
   { path: 'home',  component: HomeComponent },
+  { path: 'custom-cat', loadChildren: './custom-cat#CustomCatModule' },
   { path: 'cat-group', component: CatGroupComponent },
   { path: 'about', component: AboutComponent },
   { path: 'detail', loadChildren: './+detail#DetailModule'},

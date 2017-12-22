@@ -50,6 +50,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@angular/http@^5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.1.2.tgz#38edf3bec056e9c3456868799f4c0f83127c73b9"
+  dependencies:
+    tslib "^1.7.1"
+
 "@angular/platform-browser-dynamic@~5.1.0":
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/@angular/platform-browser-dynamic/-/platform-browser-dynamic-5.1.2.tgz#120d49ce16bcb91b8ac1c5e5c634fba592359ad7"
@@ -341,6 +347,10 @@ ambi@^2.2.0, ambi@^2.5.0:
 amdefine@>=0.0.4, amdefine@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular-in-memory-web-api@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.5.2.tgz#ff2ea666abfd04dd7d16c953ec972e1318a09824"
 
 angular2-template-loader@^0.6.2:
   version "0.6.2"

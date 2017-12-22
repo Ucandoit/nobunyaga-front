@@ -1,0 +1,22 @@
+.cat-recap {
+    position: relative;
+    padding: 5px;
+}
+
+.military-class {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.property {
+    position: absolute;
+    left: 56px;
+    bottom: 1px;
+}
+
+.skill-list {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}

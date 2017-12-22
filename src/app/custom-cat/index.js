@@ -1,0 +1,1 @@
+export { CustomCatModule } from './custom-cat.module';
